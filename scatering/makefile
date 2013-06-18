@@ -3,3 +3,7 @@ scatering: scatering.o
 
 scatering.o: scatering.cc numerov.h
 	g++ -std=c++11 -c scatering.cc
+
+run: scatering
+	./scatering
+.PHONY: run

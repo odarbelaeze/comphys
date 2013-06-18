@@ -59,14 +59,14 @@ void numerov_rse(std::function<double(double)> V,
         if (r > r_max && !r_max_reached) {
             if (debug) std::cout << "# " << r << "    " << u << std::endl;
             if (r1 != NULL) (*r1) = r;
-            if (u1 != NULL) (*u1) = r;
+            if (u1 != NULL) (*u1) = u;
             r_max_reached = true;
         }
 
         if (r > r_max + half_lambda) {
             if (debug) std::cout << "# " << r << "    " << u << std::endl;
             if (r2 != NULL) (*r2) = r;
-            if (u2 != NULL) (*u2) = r;
+            if (u2 != NULL) (*u2) = u;
             done = true;
         }
     }
