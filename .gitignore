@@ -1,0 +1,11 @@
+# Object files
+*.o
+*.a
+*.so
+*.la
+
+# Binaries
+scatering/scatering
+
+# Images
+*.png
