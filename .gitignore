@@ -5,6 +5,7 @@
 *.la
 
 # Binaries
+dft/dft
 scatering/scatering
 
 # Data
