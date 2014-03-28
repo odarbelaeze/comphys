@@ -25,6 +25,7 @@ def main():
             H[m][n] = H_func(m, n)
 
     E, C = eig(H, S)
+    print E
     ground = E.min()
     i = np.argmax(E == ground)
 
@@ -40,12 +41,12 @@ def main():
     y2 = np.cos(np.pi / 2.0 * x)
 
     plt.plot(x, y)
-    plt.plot(x, y2, '--')
+    plt.plot(x, y2, '-o')
     plt.legend()
     plt.grid()
     plt.show()
 
-    print C[i]
+    print C[i], ground
 
 if __name__ == '__main__':
     main()
