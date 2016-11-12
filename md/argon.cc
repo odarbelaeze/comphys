@@ -47,7 +47,7 @@ ArgonSystem::ArgonSystem(int L, double T)
 
 ArgonSystem::~ArgonSystem() {}
 
-void ArgonSystem::rescale_speed() 
+void ArgonSystem::rescale_speed()
 {
     darray v_tot = v_.sum();
     darray v_prom = v_tot * (1.0 / N_);
@@ -58,7 +58,7 @@ void ArgonSystem::rescale_speed()
     };
 
     double lambda = std::sqrt(
-        (3.0 * (N_ - 1) * T_) / 
+        (3.0 * (N_ - 1) * T_) /
         (helpers::apply(v_, F)).sum()
     );
 

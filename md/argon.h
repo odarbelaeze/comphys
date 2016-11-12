@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <cmath>
 #include <functional>
+#include <random>
 #include <valarray>
 #include <vector>
 

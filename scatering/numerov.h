@@ -22,7 +22,7 @@ namespace numerov
 
     void rse(std::function<double(double)> V,
         int l, double E, double r_max, double h = 0.001,
-        double* r1 = NULL, double* u1 = NULL, 
+        double* r1 = NULL, double* u1 = NULL,
         double* r2 = NULL, double* u2 = NULL,
         bool debug = true)
 
@@ -89,7 +89,7 @@ namespace numerov
     }
 
     void rse_lj(int l, double E, double r_max, double h = 0.001,
-        double* r1 = NULL, double* u1 = NULL, 
+        double* r1 = NULL, double* u1 = NULL,
         double* r2 = NULL, double* u2 = NULL,
         bool debug = true)
 
@@ -138,7 +138,7 @@ namespace numerov
 
         while (!done)
         {
-            if (debug) std::cout << r << "    " 
+            if (debug) std::cout << r << "    "
                                  << u << "    "
                                  << V(r) << "    "
                                  << std::endl;
@@ -165,7 +165,7 @@ namespace numerov
         }
 
     }
-    
+
 }
 
 

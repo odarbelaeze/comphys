@@ -36,7 +36,7 @@ int main(int argc, char const *argv[])
     std::cout << std::setprecision(9) << std::scientific;
 
     for (double E = 0.2; E < 3.5; E += 0.02)
-        std::cout << E << "    " << total_cross_section_lj(E) << std::endl; 
+        std::cout << E << "    " << total_cross_section_lj(E) << std::endl;
 
     return 0;
 }
