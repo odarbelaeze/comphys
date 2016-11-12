@@ -18,7 +18,7 @@ def main():
     N = 10
     H = np.zeros([N, N])
     S = np.zeros([N, N])
-    
+
     for m in xrange(N):
         for n in xrange(N):
             S[m][n] = S_func(m, n)
